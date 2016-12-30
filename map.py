@@ -1,3 +1,8 @@
+import numpy as np
+from matplotlib import image as img
+from io import StringIO, BytesIO
+import requests
+
 class Map(object):
     def __init__(self, lat, long, satellite=True, zoom=10, size=(400,400), sensor=False):
         base="http://maps.googleapis.com/maps/api/staticmap?"

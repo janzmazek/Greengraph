@@ -1,4 +1,4 @@
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 from greengraph import Greengraph
 
 def MakeGraph(start, end, steps, out=False):
@@ -25,7 +25,7 @@ def MakeGraph(start, end, steps, out=False):
     data = mygraph.green_between(steps+1)
     plt.plot(data)
     plt.xlabel("Steps")
-    plt.ylabel("Green Pixel")
+    plt.ylabel("Green Pixels")
 
     if out:
         plt.savefig(out)

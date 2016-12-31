@@ -1,3 +1,3 @@
-(C) University College London 2014
+(C) University College London 2016–2017
 
 This "greengraph" package is granted into the public domain.

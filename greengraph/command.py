@@ -6,7 +6,7 @@ def process():
 
 	parser.add_argument('--from', '-f', help='start location', type='str')
 	parser.add_argument('--to', '-t', help='end location', type='str')
-	parser.add_argument('--steps', '-s', help='Number of steps between locations', type='str')
+	parser.add_argument('--steps', '-s', help='Number of steps between locations', type='int')
 	parser.add_argument('--out', '-o', help='Output file name (e.g. plot.png)', type='str')
 
 	arguments= parser.parse_args()

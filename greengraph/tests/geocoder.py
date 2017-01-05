@@ -1,6 +1,7 @@
 import yaml
 
 class Geocoder(object):
+    # This is a mock class (works offline instead of geopy.geocoders.GoogleV3)
     def __init__(self,domain):
         self.domain = domain
 

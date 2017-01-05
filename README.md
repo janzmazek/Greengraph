@@ -22,4 +22,4 @@ The package can be run using command line with command greengraph. To specify in
 -	--out or (–o): name of the output file.
 Example:
 ```bash
-greengraph --from “Ljubljana” --to “London” --steps 50 --out “plot.png” ```
+greengraph --from “Ljubljana” --to “London” --steps 50 --out “plot.png”

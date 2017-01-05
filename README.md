@@ -1,5 +1,5 @@
 # greengraph
-The first assignment for the Research Software Engineering with Python module at UCL. This Python package is used to uses Google Maps to plot “urbanisation” (green pixels intensity) between two specified locations. The program accepts four arguments: First location name, second location name, number of steps between locations and name of the output file.
+The first assignment for the Research Software Engineering with Python module at UCL. This Python package uses Google Maps to plot “urbanisation” (green pixels intensity) between two specified locations. The program accepts four arguments: First location name, second location name, number of steps between locations and name of the output file.
 
 ##Installation
 The package can be installed using pip:

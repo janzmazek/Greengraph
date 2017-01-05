@@ -6,12 +6,12 @@ import requests
 class Map(object):
     def __init__(self, lat, long, satellite=True, zoom=10, size=(400,400), sensor=False):
         base="http://maps.googleapis.com/maps/api/staticmap?"
-        params=dict(
-            sensor= str(sensor).lower(),
-            zoom= zoom,
-            size= "x".join(map(str, size)),
-            center= ",".join(map(str, (lat, long) )),
-            style="feature:all|element:labels|visibility:off"
+        params = dict(
+            sensor = str(sensor).lower(),
+            zoom = zoom,
+            size = "x".join(map(str, size)),
+            center = ",".join(map(str, (lat, long) )),
+            style = "feature:all|element:labels|visibility:off"
         )
 
         if satellite:
@@ -19,7 +19,7 @@ class Map(object):
 
         self.image = requests.get(base, params=params).content
         # Fetch our PNG image data
-        self.pixels= img.imread(BytesIO(self.image))
+        self.pixels = img.imread(BytesIO(self.image))
         # Parse our PNG image as a numpy array
 
     def green(self, threshold):

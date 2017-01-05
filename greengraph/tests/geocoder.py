@@ -5,6 +5,6 @@ class Geocoder(object):
         self.domain = domain
 
     def geocode(self, place, exactly_one):
-        #First without fixture files
-        if place == "Ljubljana":
-            return [[1,(46.0569465, 14.5057515,0.0)],[3,4]]
+        with open("fixtures/locations.yaml","r") as file:
+            locations = yaml.load(file)
+        return locations[place]
